@@ -15,8 +15,8 @@
     padding: 0 2rem;
   }
 </style>
-<div style="display: inline-block">
+<div *ngIf="tags.length > 0" style="display: inline-block">
   <div class="tag">
-    <span>Fashion</span>
+    <span *ngFor="let tag of tags">{{ tag }}</span>
   </div>
 </div>

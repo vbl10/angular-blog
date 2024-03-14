@@ -25,22 +25,18 @@
   }
 </style>
 <div class="card">
-  <img
-    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.bekiaviajes.com%2Farticulos%2Fportada%2F76000%2F76146-h.jpg&f=1&nofb=1&ipt=dbbb9da2edc78b651c7a0e6f3d25e7f5055f4e511b741e9f23868c98e9cd6c82&ipo=images"
-    alt="imagem"
-  />
+  <img [src]="post.img_src" alt="imagem" />
   <div class="stats">
-    <app-post-tag></app-post-tag>
-    <app-post-stats></app-post-stats>
+    <app-post-tag [tags]="post.tags"></app-post-tag>
+    <app-post-stats [stats]="post.stats"></app-post-stats>
   </div>
   <h1 class="post-title">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+    {{ post.title }}
   </h1>
   <div class="post-summary">
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quasi
-      veritatis quib
+      {{ post.summary }}
     </p>
   </div>
-  <app-post-meta></app-post-meta>
+  <app-post-meta [meta]="post.meta"></app-post-meta>
 </div>

@@ -7,6 +7,7 @@
     margin-right: auto;
     max-width: 1200px;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
   .main-posts {
     display: grid;
@@ -18,7 +19,7 @@
     grid-template-rows: 1fr 1fr;
     row-gap: var(--content-gap);
   }
-  .secondary-posts {
+  .flex-row {
     display: flex;
     flex-direction: row;
     column-gap: var(--content-gap);
@@ -27,16 +28,23 @@
 <app-menu-bar></app-menu-bar>
 <div class="content">
   <div class="main-posts">
-    <app-card-under-img></app-card-under-img>
+    <app-card-under-img [post]="post_main"></app-card-under-img>
     <div class="main-posts-right">
-      <app-card-over-img></app-card-over-img>
-      <app-card-over-img></app-card-over-img>
+      <app-card-over-img [post]="post_main"></app-card-over-img>
+      <app-card-over-img [post]="post_main"></app-card-over-img>
     </div>
   </div>
-  <div class="secondary-posts">
-    <app-card-under-img></app-card-under-img>
-    <app-card-under-img></app-card-under-img>
-    <app-card-under-img></app-card-under-img>
+  <div class="flex-row">
+    <app-card-under-img [post]="post_main"></app-card-under-img>
+    <app-card-under-img [post]="post_main"></app-card-under-img>
+    <app-card-under-img [post]="post_main"></app-card-under-img>
+  </div>
+  <hr />
+  <h2>Editor's Choice</h2>
+  <div class="flex-row">
+    <app-card-over-img [post]="post_main"></app-card-over-img>
+    <app-card-over-img [post]="post_main"></app-card-over-img>
+    <app-card-over-img [post]="post_main"></app-card-over-img>
   </div>
 </div>
 <router-outlet></router-outlet>
