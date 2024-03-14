@@ -1,1 +1,42 @@
-<p>card-medium works!</p>
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid red;
+    row-gap: 5px;
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 2;
+    object-fit: cover;
+  }
+  .stats {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+  }
+  .post-summary {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+  }
+</style>
+<div class="card">
+  <img
+    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.bekiaviajes.com%2Farticulos%2Fportada%2F76000%2F76146-h.jpg&f=1&nofb=1&ipt=dbbb9da2edc78b651c7a0e6f3d25e7f5055f4e511b741e9f23868c98e9cd6c82&ipo=images"
+    alt="imagem"
+  />
+  <div class="stats">
+    <app-post-tag></app-post-tag>
+    <app-post-stats></app-post-stats>
+  </div>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus</h1>
+  <div class="post-summary">
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quasi
+      veritatis quib
+    </p>
+  </div>
+  <app-post-meta></app-post-meta>
+</div>
