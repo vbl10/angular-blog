@@ -2,7 +2,7 @@
   .content {
     display: flex;
     flex-direction: column;
-    column-gap: 10px;
+    row-gap: 40px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -11,12 +11,17 @@
   .main-posts {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    column-gap: 10px;
+    column-gap: var(--content-gap);
   }
   .main-posts-right {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
+    row-gap: var(--content-gap);
+  }
+  .secondary-posts {
+    display: flex;
+    flex-direction: row;
+    column-gap: var(--content-gap);
   }
 </style>
 <app-menu-bar></app-menu-bar>
@@ -27,6 +32,11 @@
       <app-card-over-img></app-card-over-img>
       <app-card-over-img></app-card-over-img>
     </div>
+  </div>
+  <div class="secondary-posts">
+    <app-card-under-img></app-card-under-img>
+    <app-card-under-img></app-card-under-img>
+    <app-card-under-img></app-card-under-img>
   </div>
 </div>
 <router-outlet></router-outlet>
