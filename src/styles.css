@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h1 {
+.post-title {
   font-family: 'Times New Roman', Times, serif;
 }
 body {
