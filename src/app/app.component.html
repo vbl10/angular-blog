@@ -1,3 +1,32 @@
+<style>
+  .content {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    margin-top: 10px;
+  }
+  .main-posts {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 10px;
+  }
+  .main-posts-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+</style>
 <app-menu-bar></app-menu-bar>
-<app-post-stats></app-post-stats>
+<div class="content">
+  <div class="main-posts">
+    <app-card-medium></app-card-medium>
+    <div class="main-posts-right">
+      <app-card-over-img></app-card-over-img>
+      <app-card-over-img></app-card-over-img>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>

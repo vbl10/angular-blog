@@ -8,6 +8,8 @@ import { CardMediumComponent } from './componentes/card-medium/card-medium.compo
 import { CardOverImgComponent } from './componentes/card-over-img/card-over-img.component';
 import { CardMinComponent } from './componentes/card-min/card-min.component';
 import { PostStatsComponent } from './componentes/post-stats/post-stats.component';
+import { PostTagComponent } from './componentes/post-tag/post-tag.component';
+import { PostMetaComponent } from './componentes/post-meta/post-meta.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PostStatsComponent } from './componentes/post-stats/post-stats.componen
     CardMediumComponent,
     CardOverImgComponent,
     CardMinComponent,
-    PostStatsComponent
+    PostStatsComponent,
+    PostTagComponent,
+    PostMetaComponent
   ],
   imports: [
     BrowserModule,

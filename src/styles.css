@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
 body {
   background-color: white;
 }
