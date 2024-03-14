@@ -4,9 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './componentes/menu-bar/menu-bar.component';
-import { CardMediumComponent } from './componentes/card-medium/card-medium.component';
+import { CardUnderImgComponent } from './componentes/card-under-img/card-under-img.component';
 import { CardOverImgComponent } from './componentes/card-over-img/card-over-img.component';
-import { CardMinComponent } from './componentes/card-min/card-min.component';
 import { PostStatsComponent } from './componentes/post-stats/post-stats.component';
 import { PostTagComponent } from './componentes/post-tag/post-tag.component';
 import { PostMetaComponent } from './componentes/post-meta/post-meta.component';
@@ -15,9 +14,8 @@ import { PostMetaComponent } from './componentes/post-meta/post-meta.component';
   declarations: [
     AppComponent,
     MenuBarComponent,
-    CardMediumComponent,
+    CardUnderImgComponent,
     CardOverImgComponent,
-    CardMinComponent,
     PostStatsComponent,
     PostTagComponent,
     PostMetaComponent

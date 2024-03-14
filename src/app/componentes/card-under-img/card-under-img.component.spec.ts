@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardMinComponent } from './card-min.component';
+import { CardUnderImgComponent } from './card-under-img.component';
 
-describe('CardMinComponent', () => {
-  let component: CardMinComponent;
-  let fixture: ComponentFixture<CardMinComponent>;
+describe('CardMediumComponent', () => {
+  let component: CardUnderImgComponent;
+  let fixture: ComponentFixture<CardUnderImgComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardMinComponent ]
+      declarations: [ CardUnderImgComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CardMinComponent);
+    fixture = TestBed.createComponent(CardUnderImgComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
