@@ -4,6 +4,14 @@
     color: white;
     height: 4rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div2 {
+    max-width: var(--content-max-width);
+    width: 100%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -11,9 +19,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  .left-side {
-    justify-content: left;
   }
   .left-side-options {
     column-gap: 2rem;
@@ -23,23 +28,23 @@
     column-gap: 1rem;
     margin-right: 50px;
   }
-  h1 {
-    margin-left: 50px;
-    margin-right: 100px;
-  }
 </style>
 <div class="div1">
-  <div class="flex left-side">
-    <h1>MeuBlog</h1>
-    <div class="flex left-side left-side-options">
-      <span> opção 1 </span>
-      <span> opção 2 </span>
-      <span> opção 3 </span>
+  <div class="div2">
+    <div class="flex">
+      <a href="#"><h1>MeuBlog</h1></a>
+      <div class="flex" style="justify-content: center; width: 100%">
+        <div class="flex left-side-options">
+          <a href="#"> opção 1 </a>
+          <a href="#"> opção 2 </a>
+          <a href="#"> opção 3 </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="flex right-side">
-    <span>dark mode</span>
-    <span>cart</span>
-    <span>search</span>
+    <div class="flex right-side">
+      <a href="#">dark mode</a>
+      <a href="#">cart</a>
+      <a href="#">search</a>
+    </div>
   </div>
 </div>

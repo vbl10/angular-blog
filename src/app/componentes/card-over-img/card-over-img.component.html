@@ -27,24 +27,26 @@
     font-size: small;
   }
 </style>
-<div
-  class="background"
-  [ngStyle]="{
-    background:
-      'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),' +
-      'url(' +
-      post.img_src +
-      ')',
-    'background-size': 'cover'
-  }"
->
-  <div class="content">
-    <h1 class="post-title">
-      {{ post.title }}
-    </h1>
-    <p>
-      {{ post.summary }}
-    </p>
-    <app-post-stats [stats]="post.stats" [color]="'white'"></app-post-stats>
+<a href="#">
+  <div
+    class="background"
+    [ngStyle]="{
+      background:
+        'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),' +
+        'url(' +
+        post.img_src +
+        ')',
+      'background-size': 'cover'
+    }"
+  >
+    <div class="content">
+      <h1 class="post-title">
+        {{ post.title }}
+      </h1>
+      <p>
+        {{ post.summary }}
+      </p>
+      <app-post-stats [stats]="post.stats" [color]="'white'"></app-post-stats>
+    </div>
   </div>
-</div>
+</a>

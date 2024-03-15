@@ -1,4 +1,7 @@
 <style>
+  * {
+    color: black;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -24,19 +27,21 @@
     width: 70%;
   }
 </style>
-<div class="card">
-  <img [src]="post.img_src" alt="imagem" />
-  <div class="stats">
-    <app-post-tag [tags]="post.tags"></app-post-tag>
-    <app-post-stats [stats]="post.stats"></app-post-stats>
+<a href="">
+  <div class="card">
+    <img [src]="post.img_src" alt="imagem" />
+    <div class="stats">
+      <app-post-tag [tags]="post.tags"></app-post-tag>
+      <app-post-stats [stats]="post.stats"></app-post-stats>
+    </div>
+    <h1 class="post-title">
+      {{ post.title }}
+    </h1>
+    <div class="post-summary">
+      <p>
+        {{ post.summary }}
+      </p>
+    </div>
+    <app-post-meta [meta]="post.meta"></app-post-meta>
   </div>
-  <h1 class="post-title">
-    {{ post.title }}
-  </h1>
-  <div class="post-summary">
-    <p>
-      {{ post.summary }}
-    </p>
-  </div>
-  <app-post-meta [meta]="post.meta"></app-post-meta>
-</div>
+</a>
