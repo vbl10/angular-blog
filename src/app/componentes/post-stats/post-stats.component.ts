@@ -7,7 +7,7 @@ import { post_stats } from 'src/post';
 })
 export class PostStatsComponent implements OnInit {
   @Input() public stats: post_stats = new post_stats();
-  
+  @Input() public color: string = "gray";
   constructor() { }
 
   ngOnInit(): void {

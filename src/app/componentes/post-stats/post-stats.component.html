@@ -7,14 +7,11 @@
   }
   span {
     padding-left: 5px;
-    border-left: 2px solid lightgray;
-  }
-  .first-span {
-    border: none;
+    color: gray;
   }
 </style>
 <div class="flex">
-  <span class="first-span">{{ stats.views }}</span>
-  <span>{{ stats.read_time }}</span>
-  <span>{{ stats.shares }}</span>
+  <span [ngStyle]="{'color': color}">{{ stats.views }}</span>
+  <span [ngStyle]="{'color': color}">| {{ stats.read_time }}</span>
+  <span [ngStyle]="{'color': color}">| {{ stats.shares }}</span>
 </div>
