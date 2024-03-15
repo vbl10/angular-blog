@@ -24,25 +24,30 @@
     flex-direction: row;
     column-gap: var(--content-gap);
   }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: var(--content-gap);
+  }
 </style>
 <div class="content">
   <div class="main-posts">
-    <app-card-under-img [post]="post_main"></app-card-under-img>
+    <app-card-under-img [postId]="1"></app-card-under-img>
     <div class="main-posts-right">
-      <app-card-over-img [post]="post_main"></app-card-over-img>
-      <app-card-over-img [post]="post_main"></app-card-over-img>
+      <app-card-over-img [postId]="2"></app-card-over-img>
+      <app-card-over-img [postId]="3"></app-card-over-img>
     </div>
   </div>
-  <div class="flex-row">
-    <app-card-under-img [post]="post_main"></app-card-under-img>
-    <app-card-under-img [post]="post_main"></app-card-under-img>
-    <app-card-under-img [post]="post_main"></app-card-under-img>
+  <div class="grid">
+    <app-card-under-img [postId]="0"></app-card-under-img>
+    <app-card-under-img [postId]="2"></app-card-under-img>
+    <app-card-under-img [postId]="1"></app-card-under-img>
   </div>
   <hr />
   <h2>Editor's Choice</h2>
   <div class="flex-row">
-    <app-card-over-img [post]="post_main"></app-card-over-img>
-    <app-card-over-img [post]="post_main"></app-card-over-img>
-    <app-card-over-img [post]="post_main"></app-card-over-img>
+    <app-card-over-img [postId]="3"></app-card-over-img>
+    <app-card-over-img [postId]="2"></app-card-over-img>
+    <app-card-over-img [postId]="1"></app-card-over-img>
   </div>
 </div>

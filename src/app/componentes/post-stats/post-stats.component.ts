@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { post_stats } from 'src/post';
+import { post_stats } from 'src/app/post';
 @Component({
   selector: 'app-post-stats',
   templateUrl: './post-stats.component.html',

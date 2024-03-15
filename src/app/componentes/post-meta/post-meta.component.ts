@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { post_meta } from 'src/post';
+import { post_meta } from 'src/app/post';
 @Component({
   selector: 'app-post-meta',
   templateUrl: './post-meta.component.html',
