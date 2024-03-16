@@ -8,11 +8,12 @@
     font-weight: 600;
   }
   .date {
-    border-left: 2px solid gray;
     padding-left: 8px;
   }
 </style>
 <div class="post-meta">
-  <div><span>By </span><span class="author"> {{ meta.author }}</span></div>
-  <span class="date"> {{ meta.date }} </span>
+  <div>
+    <span>By </span><span class="author"> {{ meta.author }}</span>
+  </div>
+  <span class="date"> | {{ meta.date }} </span>
 </div>

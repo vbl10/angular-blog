@@ -1,3 +1,127 @@
+<style>
+  .content {
+    max-width: var(--content-max-width);
+    width: 100%;
+    margin: auto;
+  }
+  header {
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 30px;
+    box-shadow: 0px 15px 10px lightgray;
+  }
+  .header-content {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: var(--content-gap);
+    text-shadow: 2px 2px 8px black;
+  }
+  .header-content h1 {
+    font-size: 34pt;
+  }
+  .post {
+    max-width: 80%;
+    padding-top: 30px;
+    margin: auto;
+    font-size: larger;
+  }
+</style>
 
-<p>post works!</p>
-<a [routerLink]="['']">voltar</a>
+<div class="content">
+  <header
+    [ngStyle]="{
+      background:
+        'linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.4)),' +
+        'url(' +
+        post.img_src +
+        ')',
+      'background-size': 'cover',
+      'background-position': 'center'
+    }"
+  >
+    <div class="header-content">
+      <h1 class="post-title">{{ post.title }}</h1>
+      <app-post-meta [meta]="post.meta"></app-post-meta>
+    </div>
+  </header>
+  <p class="post">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint commodi
+    provident! Porro hic sequi sed ex fugit? Error, quas aliquam ipsam amet vel
+    minus. Officia ullam eveniet corporis dolore. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Delectus recusandae magni similique,
+    dignissimos aliquid eaque asperiores quis voluptates quidem error voluptatum
+    eum fugit odio consectetur provident optio unde? Fuga, consequatur? Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aut quo,
+    animi vel dolores saepe itaque corrupti obcaecati, accusantium esse odit
+    quos ipsam neque dolor
+  </p>
+  <p class="post">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint commodi
+    provident! Porro hic sequi sed ex fugit? Error, quas aliquam ipsam amet vel
+    minus. Officia ullam eveniet corporis dolore. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Delectus recusandae magni similique,
+    dignissimos aliquid eaque asperiores quis voluptates quidem error voluptatum
+    eum fugit odio consectetur provident optio unde? Fuga, consequatur? Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aut quo,
+    animi vel dolores saepe itaque corrupti obcaecati, accusantium esse odit
+    quos ipsam neque dolor
+  </p>
+  <p class="post">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint commodi
+    provident! Porro hic sequi sed ex fugit? Error, quas aliquam ipsam amet vel
+    minus. Officia ullam eveniet corporis dolore. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Delectus recusandae magni similique,
+    dignissimos aliquid eaque asperiores quis voluptates quidem error voluptatum
+    eum fugit odio consectetur provident optio unde? Fuga, consequatur? Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aut quo,
+    animi vel dolores saepe itaque corrupti obcaecati, accusantium esse odit
+    quos ipsam neque dolor
+  </p>
+  <p class="post">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint commodi
+    provident! Porro hic sequi sed ex fugit? Error, quas aliquam ipsam amet vel
+    minus. Officia ullam eveniet corporis dolore. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Delectus recusandae magni similique,
+    dignissimos aliquid eaque asperiores quis voluptates quidem error voluptatum
+    eum fugit odio consectetur provident optio unde? Fuga, consequatur? Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aut quo,
+    animi vel dolores saepe itaque corrupti obcaecati, accusantium esse odit
+    quos ipsam neque dolor
+  </p>
+  <p class="post">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint commodi
+    provident! Porro hic sequi sed ex fugit? Error, quas aliquam ipsam amet vel
+    minus. Officia ullam eveniet corporis dolore. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Delectus recusandae magni similique,
+    dignissimos aliquid eaque asperiores quis voluptates quidem error voluptatum
+    eum fugit odio consectetur provident optio unde? Fuga, consequatur? Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aut quo,
+    animi vel dolores saepe itaque corrupti obcaecati, accusantium esse odit
+    quos ipsam neque dolor
+  </p>
+  <p class="post">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint commodi
+    provident! Porro hic sequi sed ex fugit? Error, quas aliquam ipsam amet vel
+    minus. Officia ullam eveniet corporis dolore. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Delectus recusandae magni similique,
+    dignissimos aliquid eaque asperiores quis voluptates quidem error voluptatum
+    eum fugit odio consectetur provident optio unde? Fuga, consequatur? Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aut quo,
+    animi vel dolores saepe itaque corrupti obcaecati, accusantium esse odit
+    quos ipsam neque dolor
+  </p>
+  <p class="post">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint commodi
+    provident! Porro hic sequi sed ex fugit? Error, quas aliquam ipsam amet vel
+    minus. Officia ullam eveniet corporis dolore. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Delectus recusandae magni similique,
+    dignissimos aliquid eaque asperiores quis voluptates quidem error voluptatum
+    eum fugit odio consectetur provident optio unde? Fuga, consequatur? Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aut quo,
+    animi vel dolores saepe itaque corrupti obcaecati, accusantium esse odit
+    quos ipsam neque dolor
+  </p>
+</div>
